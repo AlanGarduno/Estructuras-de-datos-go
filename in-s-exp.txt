@@ -1,0 +1,23 @@
+/*
+This code is an example of algoritm called insertion sort
+this algorim checks item by item if the (left one elements) is minor than the actual item till actual item is the 
+minor one.
+Basic-Algoritm-Exaple
+Supose tha we have the array [10,4,1] **This array is already sorted but we will resorted by minor to major
+The first element is 10 and on the left there´s nothig, so the algoritm will assume that this one is sorted
+Then the next one item 4, it has the 10 on its left so the algoritm will swap this items
+[4,10,1]
+Then the 4 is the first element
+Then with 1, it has the 10 item on its left, so just like before they will swap
+[4,1,10]
+and repeating, beacuse 4>1
+for finally
+[1,4,10], and that´s it. ;)
+
+By: Alan Garduño Velazquez, C.E.O GARCOH
+Implemetation on go, you can also try it on C the code is so similar.
+This code is for the employee/interested tests.
+
+If you wanna see this explanation in Spanish or in ay other language you have a ref link in your mail, in fact you must be an employee or an interested
+
+*/
