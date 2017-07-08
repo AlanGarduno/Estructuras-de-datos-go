@@ -36,13 +36,13 @@ func merge(array_left, array_right []int)[]int {
 		return append(array_left,array_right...)
 	}
 
-	resultado := make([]int,0)
+	resultado := make([]int,0) //Arrglo dinamico en go
 	var menor int
 
 	for len(array_left) > 0 && len(array_right) > 0{
 			if array_left[0] <= array_right[0]{
 				menor = array_left[0]
-				array_left = array_left[1:]
+				array_left = array_left[1:] //se redefine un aray [de:hasta]
 			}else{
 				menor = array_right[0]
 				array_right = array_right[1:]
@@ -51,7 +51,7 @@ func merge(array_left, array_right []int)[]int {
 
 		}
 		if len(array_left) > 0{
-			resultado = append(resultado,array_left...)
+			resultado = append(resultado,array_left...) //Los tres puntos es hasta que se acabe el array
 		}
 
 		if len(array_right) > 0{
